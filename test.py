@@ -1,14 +1,13 @@
 import telebot
 from telebot import types
 
-token = "512605692:AAFFP-vV8mD_If52Yd-UEEIci0IV6gsC3XU"
+token = ""
 
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=["start"])
 def start(message):
-        bot.send_message(message.from_user.id, "Psss.. \nDo you want me to kinkle you some great stuff?"
-                                               "\nUse command /getsignal to be in a know.")
+        bot.send_message(message.from_user.id, "Psss.. ")
 
 @bot.message_handler(commands=["getsignal"])
 def getsignal(message):
